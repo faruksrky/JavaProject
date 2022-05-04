@@ -1,7 +1,7 @@
 package firstrestapi.springrestapi.service;
 
 import firstrestapi.springrestapi.model.Employee;
-import firstrestapi.springrestapi.repository.RepositoryEmployee;
+import firstrestapi.springrestapi.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
-    private RepositoryEmployee eRepository;
+    private EmployeeRepository eRepository;
 
 
     @Override
